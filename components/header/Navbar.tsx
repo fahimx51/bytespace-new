@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <header className="w-full bg-grid-pattern bg-primary text-white sticky top-0 z-50">
-            <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <div className="max-w-7xl mx-auto max-2xl:px-4 h-20 flex items-center justify-between">
 
                 {/* Left: Logo */}
                 <div className="flex-1 flex justify-start">
