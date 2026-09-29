@@ -5,3 +5,10 @@
   --font-sans: var(--font-satoshi), sans-serif;
   --font-heading: var(--font-poppins), sans-serif;
 }
+
+@theme {
+  --color-primary: #003be2;  
+  --color-accent: #cbfc01;             
+  --color-shuttle-gray-100: #e5e6e8;   
+  --color-shuttle-gray-600: #4f4f4f;   
+}
