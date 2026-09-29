@@ -1,2 +1,7 @@
+/* globals.css */
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-satoshi), sans-serif;
+  --font-heading: var(--font-poppins), sans-serif;
+}
