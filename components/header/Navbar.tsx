@@ -17,7 +17,7 @@ export default function Navbar() {
     const pathname = usePathname();
 
     return (
-        <header className="w-full bg-primary text-white sticky top-0 z-50">
+        <header className="w-full bg-grid-pattern bg-primary text-white sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
 
                 {/* Left: Logo */}
