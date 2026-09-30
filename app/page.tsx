@@ -2,6 +2,7 @@ import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/header/Navbar";
 import CourseCategories from "@/components/landing-page/CourseCategories";
 import CoursesSection from "@/components/landing-page/CoursesSection";
+import CreatorCTA from "@/components/landing-page/CreatorCTA";
 import GrowthSection from "@/components/landing-page/GrowthSection";
 import Hero from "@/components/landing-page/Hero";
 import LearningPaths from "@/components/landing-page/LearningPaths";
@@ -19,6 +20,7 @@ export default function Home() {
       <CoursesSection />
       <LearningPaths />
       <GrowthSection />
+      <CreatorCTA />
       <Footer />
     </div>
   );
