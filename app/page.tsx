@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/header/Navbar";
 import CourseCategories from "@/components/landing-page/CourseCategories";
 import CoursesSection from "@/components/landing-page/CoursesSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <CoursesSection />
       <LearningPaths />
       <GrowthSection />
+      <Footer />
     </div>
   );
 }
