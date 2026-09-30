@@ -8,22 +8,22 @@ import Hero from "@/components/landing-page/Hero";
 import LearningPaths from "@/components/landing-page/LearningPaths";
 import Testimonials from "@/components/landing-page/Testimonials";
 import TrustedBy from "@/components/landing-page/TrustedBy";
-import Logo from "@/components/ui/Logo";
-import Image from "next/image";
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Hero />
-      <TrustedBy />
-      <CourseCategories />
-      <CoursesSection />
-      <LearningPaths />
-      <GrowthSection />
-      <CreatorCTA />
-      <Testimonials />
+      <main>
+        <Hero />
+        <TrustedBy />
+        <CourseCategories />
+        <CoursesSection />
+        <LearningPaths />
+        <GrowthSection />
+        <CreatorCTA />
+        <Testimonials />
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
