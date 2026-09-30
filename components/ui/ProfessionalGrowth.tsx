@@ -1,6 +1,6 @@
 import Image from "next/image";
 import CourseCard from "@/components/ui/CourseCard";
-import { courses } from "@/data/course-data";
+import { courses } from "@/data/data";
 
 const stats = [
     { value: "12K", label: "Students" },

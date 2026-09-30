@@ -1,5 +1,5 @@
 import CourseCard, { Course } from "@/components/ui/CourseCard";
-import { courses } from "@/data/course-data";
+import { courses } from "@/data/data";
 
 // Replace the image paths with your real files
 

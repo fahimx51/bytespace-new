@@ -52,11 +52,11 @@ export default function CreatorCTA() {
 
             {/* Content */}
             <div className="mx-auto flex max-w-[1000px] flex-col items-center px-6 py-28 text-center sm:py-32 md:py-24">
-                <h2 className="font-heading max-w-[650px] text-[28px] font-semibold leading-tight text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+                <h2 className="font-heading max-w-[650px] text-[28px] font-semibold leading-tight text-white md:text-[44px] md:leading-[1.2]">
                     Unlock Your Potential as a Creator with ByteSpace
                 </h2>
 
-                <p className="mt-6 max-w-[800px] text-center text-sm leading-relaxed text-white/85 md:mt-8 md:text-[15px]">
+                <p className="mt-6 max-w-[964px] text-center text-[14px] leading-relaxed text-white/85 md:mt-8 md:text-[18px]">
                     Experience the collaboration of numerous creators and an expanding
                     selection of courses. Register now and become a part of a community
                     comprising over 10,000 local and international creators. Utilize our
@@ -66,7 +66,7 @@ export default function CreatorCTA() {
 
                 <Link
                     href="/signup"
-                    className="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-7 py-3 text-sm font-medium text-[#242528] transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-10"
+                    className="mt-8 inline-flex items-center justify-center rounded-full bg-accent px-6 py-3 font-medium text-[14px] md:w-[172px] md:h-[46px] mx:text-[18px] font-medium text-[#242528] transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-10"
                 >
                     Join as Creator
                 </Link>

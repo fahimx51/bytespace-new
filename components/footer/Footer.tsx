@@ -47,7 +47,7 @@ export default function Footer() {
                             </button>
                         </form>
 
-                        <p className="mt-5 max-w-[350px] text-[11px] leading-4 text-[#4B4C53]">
+                        <p className="mt-5 max-w-[504px] text-[12px] leading-4 text-[#4B4C53]">
                             By subscribing, you agree to our Privacy Policy and consent to receive updates from our
                             company.
                         </p>
@@ -61,7 +61,7 @@ export default function Footer() {
                                     <li key={label}>
                                         <Link
                                             href="#"
-                                            className="text-[13px] text-[#242528] transition-colors hover:text-primary"
+                                            className="text-[14px] text-[#242528] transition-colors hover:text-primary"
                                         >
                                             {label}
                                         </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
 
                 {/* Bottom bar */}
                 <div className="mt-12 border-t border-gray-200 py-6 lg:mt-[70px]">
-                    <div className="flex flex-col items-center justify-between gap-3 text-[11px] text-[#242528] sm:flex-row">
+                    <div className="flex flex-col items-center justify-between gap-3 text-[12px] text-[#242528] sm:flex-row">
                         <p>@ 2023 ByteSpace. All rights reserved.</p>
 
                         <ul className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2">

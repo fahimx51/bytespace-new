@@ -52,7 +52,7 @@ export default function CourseCategories() {
     return (
         <section className="w-full bg-white px-6 py-14 lg:py-[90px]">
             <div className="mx-auto flex max-w-[1100px] flex-col items-center text-center">
-                <h2 className="font-heading text-[28px] font-semibold leading-tight text-[#040819]sm:text-4xl lg:text-5xl lg:leading-[1.2]">
+                <h2 className="font-heading text-[28px] font-semibold leading-tight text-[#040819]sm:text-4xl lg:text-[44px] lg:leading-[1.2]">
                     Discover Your Passion, <br />
                     Build Your Skills
                 </h2>

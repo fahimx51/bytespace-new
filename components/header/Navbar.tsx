@@ -26,7 +26,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Center: Navigation Links */}
-                <nav className="hidden md:flex items-center gap-6 font-sans text-[16px] leading-[24px]">
+                <nav className="hidden md:flex items-center gap-6 text-[16px] leading-[24px]">
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href;
                         return (
@@ -45,7 +45,7 @@ export default function Navbar() {
                 </nav>
 
                 {/* Right: Actions & Cart */}
-                <div className="flex-1 flex items-center justify-end gap-[24px] font-sans text-[16px] leading-[24px] font-[400]">
+                <div className="flex-1 flex items-center justify-end gap-[24px] text-[16px] leading-[24px] font-[400]">
                     <Link
                         href="/login"
                         className="hidden sm:inline-block text-white hover:opacity-80 transition-opacity"
@@ -96,8 +96,8 @@ export default function Navbar() {
 
             {/* Mobile Drawer */}
             {mobileMenuOpen && (
-                <div className="md:hidden bg-primary px-6 pt-2 pb-6 space-y-3">
-                    <nav className="flex flex-col gap-2 font-sans text-[16px] leading-[24px]">
+                <div className="md:hidden bg-grid-pattern bg-primary px-6 pt-2 pb-6 space-y-3">
+                    <nav className="flex flex-col gap-2 text-[16px] leading-[24px]">
                         {navLinks.map((link) => {
                             const isActive = pathname === link.href;
                             return (
@@ -114,7 +114,7 @@ export default function Navbar() {
                         })}
                     </nav>
 
-                    <div className="pt-2 flex flex-col gap-2 font-sans text-[16px] leading-[24px] font-[400]">
+                    <div className="pt-2 flex flex-col gap-2 text-[16px] leading-[24px] font-[400]">
                         <Link
                             href="/login"
                             onClick={() => setMobileMenuOpen(false)}
