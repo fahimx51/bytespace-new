@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ByteSpace New
+
+A responsive learning-platform website built from a Figma design: a full landing page plus Login and Signup pages.
+
+**Live demo:** https://bytespace-new-nine.vercel.app/
+**Repository:** https://github.com/fahimx51/bytespace-new
+
+## Pages
+
+| Route     | Description                                                       |
+| --------- | ----------------------------------------------------------------- |
+| `/`       | Landing page: hero, courses, learning paths, testimonials and more |
+| `/login`  | Login page with form validation                                   |
+| `/signup` | Signup page with form validation                                  |
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- TypeScript
+- Tailwind CSS
+- `next/image` for image optimization
+- Deployed on Vercel
+
+## Features
+
+- Pixel-matched implementation of the provided Figma design
+- Fully responsive for phones, tablets and desktops
+- Sticky navbar with a mobile menu
+- Shared `(auth)` route-group layout for the Login and Signup pages
+- Client-side form validation with inline errors and accessible ARIA attributes
+- Reusable components, with content kept in a single data file
+
+## Project Structure
+
+```
+app/
+├── (auth)/
+│   ├── layout.tsx        # shared layout for login and signup
+│   ├── login/page.tsx
+│   └── signup/page.tsx
+└── page.tsx              # landing page
+components/
+├── auth/                 # LoginForm, RegisterForm, AuthIntro
+├── footer/
+├── header/
+├── landing-page/         # landing page sections
+└── ui/                   # shared UI (Logo, CourseCard)
+data/
+└── data.ts               # courses and testimonials
+lib/
+└── auth/validation.ts    # form validation rules
+public/                   # icons and images
+```
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# clone the repository
+git clone https://github.com/fahimx51/bytespace-new.git
+cd bytespace-new
+
+# install dependencies
+npm install
+
+# start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- There is no backend. The Login and Signup forms validate input on the client but do not authenticate, and the social login buttons are visual only.
+- Course and testimonial content is static placeholder data.
 
-## Learn More
+## Git Workflow
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Work was done on separate feature branches and merged into `main` through Pull Requests.
